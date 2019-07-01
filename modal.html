@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Mt.Ruapehu</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="plugins/sweetAlert2/package/dist/sweetalert2.min.css">
+   <link href="css/jquery-ui.css" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <div class="bg flex-center">
+      <nav class="navbar navbar-dark bg-none fixed-top">
+        <div class="container-fluid w-100 mx-0">
+          <a class="navbar-brand" href="https://www.tourismnewzealand.com/">
+              <img src="img/logo.png" class="logo" alt="">
+          </a>
+            <ul class="navbar-nav justify-content-end ml-auto">
+              <li id="login" class="nav-item active">
+                <a class="nav-link text-secondary loginText position-relative" href="#">LOG IN</a>
+                <a id="username" ></a>
+              </li>
+            </ul>
+          </div>
+      </nav>
+      <div class="pageConatiner">
+        <div class="icons d-flex flex-column float-right center">
+            <a class="icon text-dark" href="#"><i class="fab fa-facebook"></i></a>
+            <a class="icon text-dark" href="#"><i class="fab fa-twitter"></i></a>
+            <a class="icon text-dark" href="#"><i class="fab fa-instagram"></i></a>
+          </div >
+
+          <div class="information card-deck bg-dark pt-4">
+            <div class="card" style="width: 18rem; height:32rem;">
+              <img class="card-img-top" src="img/nationalHotel.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">The Park Hotel Ruapehu</h5>
+                <h5 class="card-title">NZD 157/night</h5>
+                <p class="card-text">Minimum Guest:1, Minimum Night:1, Maximum Night:5</p>
+                <a href="#" class="seeMore btn btn-outline-info btn-block">SEE MORE</a>
+                <a href="#" class="bookNow btn btn-info btn-block">BOOK NOW</a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem; height:32rem;">
+              <img class="card-img-top" src="img/nationalHotel.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">The Park Hotel Ruapehu</h5>
+                <h5 class="card-title">NZD 157/night</h5>
+                <p class="card-text">Minimum Guest:1, Minimum Night:1, Maximum Night:5</p>
+                <a href="#" class="seeMore btn btn-outline-info btn-block">SEE MORE</a>
+                <a href="#" class="bookNow btn btn-info btn-block">BOOK NOW</a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem; height:32rem;">
+              <img class="card-img-top" src="img/nationalHotel.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">The Park Hotel Ruapehu</h5>
+                <h5 class="card-title">NZD 157/night</h5>
+                <p class="card-text">Minimum Guest:1, Minimum Night:1, Maximum Night:5</p>
+                <a href="#" class="seeMore btn btn-outline-info btn-block">SEE MORE</a>
+                <a href="#" class="bookNow btn btn-info btn-block">BOOK NOW</a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem; height:32rem;">
+              <img class="card-img-top" src="img/nationalHotel.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">The Park Hotel Ruapehu</h5>
+                <h5 class="card-title">NZD 157/night</h5>
+                <p class="card-text">Minimum Guest:1, Minimum Night:1, Maximum Night:5</p>
+                <a href="#" class="seeMore btn btn-outline-info btn-block">SEE MORE</a>
+                <a href="#" class="bookNow btn btn-info btn-block">BOOK NOW</a>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- <div class="information d-flex flex-row center">
+            <div class="card">
+              <img src="" alt="">
+              <div class="title">
+
+              </div>
+              <div class="details">
+
+              </div>
+              <div class="btn-group d-flex flex-column">
+                <button type="button" class="btn" name="button">SEE MORE</button>
+                <button type="button" class="btn btn-info" name="button">BOOK NOW</button>
+              </div>
+            </div>
+
+
+          </div> -->
+
+        <!-- <div class="banner">
+          <h1 class="bg-title text-center display-2">RUAPEHU</h1>
+        </div> -->
+      </div>
+
+      <form class="bookingForm">
+       <div class="form-row justify-content-center fixed-bottom bg-dark">
+          <div class="col col-lg-3 col-md-4 col-sm-12">
+            <div class="formLocation d-flex">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <label class="input-group-text" for="inputGroupSelect01"><i class="fas fa-map-marker-alt"></i></label>
+                </div>
+                <select class="custom-select" id="inputGroupSelect01">
+                  <option value=""  disabled selected>Location Select</option>
+                  <option value="1">National Park</option>
+                  <option value="2">Whakapapa Village</option>
+                  <option value="3">Turangi</option>
+                  <option value="4">Ohakune</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="col col-lg-2 col-md-2 col-xs-12">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01"><i class="fas fa-calendar-alt"></i></label>
+              </div>
+              <input id="date-picker-example1" type="text" class="form-control datepicker1" placeholder="Check-in" aria-label="" aria-describedby="basic-addon1">
+            </div>
+          </div>
+          <div class="col col-lg-2 col-md-2 col-xs-12">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01"><i class="fas fa-calendar-alt"></i></label>
+              </div>
+              <input id="date-picker-example2" type="text" class="form-control datepicker2" placeholder="Check-out" aria-label="" aria-describedby="basic-addon2">
+            </div>
+          </div>
+
+          <div class="col col-lg-2 col-md-2 co1-sm-12">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01"><i class="fas fa-user-alt"></i></label>
+              </div>
+              <input type="number" name="quant[1]" class="form-control input-number" step="1" min="1" max="4" value="1" aria-describedby="basic-addon1">
+              <!-- <div class="input-group-append" id="button-addon4">
+                <button class="btn btn-outline-secondary" type="button">-</button>
+                <button class="btn btn-outline-secondary" type="button">+</button>
+              </div> -->
+            </div>
+            </div>
+          <button id="search" type="button" class="mx-2 btn btn-info">Search</button>
+        </div>
+      </form>
+
+
+      <form class="loginForm dropdown-menu p-3" method="post" action="#" onsubmit="validate()">
+        <div class="form-group">
+          <input type="text" class="form-control" id="idInput" placeholder="Username">
+          <p class="idErr"></p>
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" id="pwInput" placeholder="Password">
+          <p class="pwErr"></p>
+        </div>
+        <div class="lonInBtn d-flex justify-content-around">
+          <button id="loginSubmit" type="submit" class="btn btn-dark" value="submit" >Log In</button>
+          <button type="submit" class="btn btn-dark">Sign Up</button>
+        </div>
+      </form>
+
+      <div id="popup" class="overlay">
+        <div id="content">
+          <div id="close">
+            <i id="close" class="fas fa-times fa-2x"></i>
+          </div>
+        <div class="row h-100">
+          <div class="col col-6 h-100">
+            <img id="itemImage" src="" alt="" class="img-fluid">
+          </div>
+
+            <div class="col col-5 h-100">
+              <h2 id="itemName" class="display-5 mt-1 text-uppercase"></h2>
+              <p id="itemUnit"></p>
+              <p id="itemSort"></p>
+              <p><span id="itemPrice">$ </span></p>
+              <div id="add"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+  <script src="plugins/sweetAlert2/package/dist/sweetalert2.all.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js">  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/jquery-ui.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"> </script>
+  <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>

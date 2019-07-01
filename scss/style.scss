@@ -1,0 +1,137 @@
+@import 'variables';
+@import 'mixin';
+@import 'basic';
+@import 'login';
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap');
+
+.bg{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../img/bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.logo{
+  width: 120px;
+}
+.loginText{
+  font-size: 20px;
+  font-weight: 600;
+  text-align: right;
+  @include respond-to(sm){
+    display: none;
+  }
+}
+.icons{
+  position: absolute;
+  top:50%;
+  transform: translate(-50%,-50%);
+  right: 2%;
+  @include respond-to(sm){
+    bottom: 0 !important;
+    top: auto;
+    flex-direction:row !important;
+    width: 100px;
+    justify-content:space-around;
+  }
+  .icon{
+    font-size: 27px;
+    opacity: 0.9;
+    @include respond-to(md){
+      font-size: 20px;
+    }
+  }
+}
+.banner{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  .bg-title{
+    font-size: 150px;
+    font-weight: 900;
+    opacity: 0.6;
+    text-shadow: 2px 2px 4px $dark;
+    @include respond-to(md) {
+      font-size: 100px;
+    }
+    @include respond-to(sm){
+      display: none;
+    }
+  }
+}
+
+.bookingForm{
+  @include respond-to(sm){
+    .form-row{
+      z-index:3;
+      background-color: rgba(0, 0, 0, 0.5) !important;
+      flex-direction: column;
+      position: absolute !important;
+      border-radius: 20px;
+      height: 400px;
+      padding: 5% 2%;
+      width: 90%;
+      top: 28%;
+      left: 7%;
+      justify-content: space-around !important;
+      .input-group,.custom-select,.form-control{
+        height: 50px;
+      }
+      #search{
+        height: 50px;
+      }
+    }
+  }
+}
+
+.information{
+  position: absolute;
+  top:15%;
+  left: 10%;
+  opacity: 0.9;
+  height: 60%;
+  width: 80%;
+  border-radius: 20px;
+}
+
+.overlay{
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  display: none;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
+
+#content{
+  color: black;
+  width: 50vw;
+  max-height: 45vh;
+  height: 45vh;
+  background-color: white;
+  padding: 10px;
+  position: relative;
+}
+#close{
+  position: absolute;
+  right: 0;
+  margin-right: 5px;
+  color: black;
+  z-index: 1000000;
+}
+#close:hover{
+  color: #bdc3c7;
+  cursor: pointer;
+}
+
+#itemImage{
+  max-height: 100%;
+}

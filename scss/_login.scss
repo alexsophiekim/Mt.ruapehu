@@ -1,0 +1,15 @@
+.loginForm{
+  top:1% !important;
+  right: 120px !important;
+  left: auto !important;
+  transform: none !important;
+  background-color: black;
+  border-radius: 20px;
+  opacity: 0.5;
+  width: 220px;
+  height: 180px;
+  z-index: 2000;
+}
+.idErr, .pwErr{
+  color: red;
+}

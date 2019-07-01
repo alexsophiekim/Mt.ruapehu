@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap");
+/* line 2, ../scss/_basic.scss */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+/* line 7, ../scss/_basic.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden; }
+
+/* line 1, ../scss/_login.scss */
+.loginForm {
+  top: 1% !important;
+  right: 120px !important;
+  left: auto !important;
+  transform: none !important;
+  background-color: black;
+  border-radius: 20px;
+  opacity: 0.5;
+  width: 220px;
+  height: 180px;
+  z-index: 2000; }
+
+/* line 13, ../scss/_login.scss */
+.idErr, .pwErr {
+  color: red; }
+
+/* line 7, ../scss/style.scss */
+.bg {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../img/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+/* line 16, ../scss/style.scss */
+.logo {
+  width: 120px; }
+
+/* line 19, ../scss/style.scss */
+.loginText {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: right; }
+  @media (max-width: 576px) {
+    /* line 19, ../scss/style.scss */
+    .loginText {
+      display: none; } }
+
+/* line 27, ../scss/style.scss */
+.icons {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  right: 2%; }
+  @media (max-width: 576px) {
+    /* line 27, ../scss/style.scss */
+    .icons {
+      bottom: 0 !important;
+      top: auto;
+      flex-direction: row !important;
+      width: 100px;
+      justify-content: space-around; } }
+  /* line 39, ../scss/style.scss */
+  .icons .icon {
+    font-size: 27px;
+    opacity: 0.9; }
+    @media (max-width: 768px) {
+      /* line 39, ../scss/style.scss */
+      .icons .icon {
+        font-size: 20px; } }
+
+/* line 47, ../scss/style.scss */
+.banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%); }
+  /* line 53, ../scss/style.scss */
+  .banner .bg-title {
+    font-size: 150px;
+    font-weight: 900;
+    opacity: 0.6;
+    text-shadow: 2px 2px 4px #333033; }
+    @media (max-width: 768px) {
+      /* line 53, ../scss/style.scss */
+      .banner .bg-title {
+        font-size: 100px; } }
+    @media (max-width: 576px) {
+      /* line 53, ../scss/style.scss */
+      .banner .bg-title {
+        display: none; } }
+
+@media (max-width: 576px) {
+  /* line 69, ../scss/style.scss */
+  .bookingForm .form-row {
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    flex-direction: column;
+    position: absolute !important;
+    border-radius: 20px;
+    height: 400px;
+    padding: 5% 2%;
+    width: 90%;
+    top: 28%;
+    left: 7%;
+    justify-content: space-around !important; }
+    /* line 81, ../scss/style.scss */
+    .bookingForm .form-row .input-group, .bookingForm .form-row .custom-select, .bookingForm .form-row .form-control {
+      height: 50px; }
+    /* line 84, ../scss/style.scss */
+    .bookingForm .form-row #search {
+      height: 50px; } }
+
+/* line 91, ../scss/style.scss */
+.information {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  opacity: 0.9;
+  height: 60%;
+  width: 80%;
+  border-radius: 20px; }
+
+/* line 101, ../scss/style.scss */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  display: none;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center; }
+
+/* line 114, ../scss/style.scss */
+#content {
+  color: black;
+  width: 50vw;
+  max-height: 45vh;
+  height: 45vh;
+  background-color: white;
+  padding: 10px;
+  position: relative; }
+
+/* line 123, ../scss/style.scss */
+#close {
+  position: absolute;
+  right: 0;
+  margin-right: 5px;
+  color: black;
+  z-index: 1000000; }
+
+/* line 130, ../scss/style.scss */
+#close:hover {
+  color: #bdc3c7;
+  cursor: pointer; }
+
+/* line 135, ../scss/style.scss */
+#itemImage {
+  max-height: 100%; }
+
+/*# sourceMappingURL=style.css.map */
