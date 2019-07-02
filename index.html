@@ -5,10 +5,12 @@
     <meta charset="utf-8">
     <title>Mt.Ruapehu</title>
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="plugins/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="plugins/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="plugins/sweetAlert2/package/dist/sweetalert2.min.css">
    <link href="css/jquery-ui.css" rel="stylesheet">
-   <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+   <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
@@ -36,6 +38,17 @@
 
         </div>
 
+
+        <div id="details" class="seeMoreDetails bg-dark information">
+            <div id="owl1" class="owl-carousel owl-theme sliderBox ">
+              <img src="img/nationalHostel.jpg" class="morePhotos" alt="">
+              <img src="img/nationalHostel2.jpg" class="morePhotos" alt="">
+              <img src="img/nationalHostel3.jpg" class="morePhotos" alt="">
+          </div>
+          <p class="h5 infoTitle my-1">Accommodation information</p>
+          <p id="infoText">address : 4 Findlay Street, 3948 National Park, New Zealand</p>
+
+       </div>
 
         <div class="banner">
           <h1 class="bg-title text-center display-2">RUAPEHU</h1>
@@ -83,11 +96,7 @@
               <div class="input-group-prepend">
                 <label class="input-group-text" for="inputGroupSelect01"><i class="fas fa-user-alt"></i></label>
               </div>
-              <input type="number" name="quant[1]" class="form-control input-number" step="1" min="1" max="6" value="1" aria-describedby="basic-addon1">
-              <!-- <div class="input-group-append" id="button-addon4">
-                <button class="btn btn-outline-secondary" type="button">-</button>
-                <button class="btn btn-outline-secondary" type="button">+</button>
-              </div> -->
+              <input id="guest" type="number" name="quant[1]" class="form-control input-number" step="1" min="1" max="4" value="1" aria-describedby="basic-addon1">
             </div>
             </div>
           <button id="search" type="button" class="mx-2 btn btn-info">Search</button>
@@ -114,12 +123,13 @@
 
     </div>
 
-  <script src="plugins/sweetAlert2/package/dist/sweetalert2.all.min.js"></script>
-  <!-- <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script> -->
+
   <script type="text/javascript" src="js/jquery-3.4.1.min.js">  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/jquery-ui.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"> </script>
+  <script src="plugIns/OwlCarousel2-2.3.4/dist/owl.carousel.min.js">  </script>
+  <script src="plugins/sweetAlert2/package/dist/sweetalert2.all.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>

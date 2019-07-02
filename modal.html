@@ -4,6 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <title>Mt.Ruapehu</title>
+    <link rel="stylesheet" href="plugins/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="plugins/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="plugins/sweetAlert2/package/dist/sweetalert2.min.css">
    <link href="css/jquery-ui.css" rel="stylesheet">
@@ -33,75 +35,29 @@
             <a class="icon text-dark" href="#"><i class="fab fa-instagram"></i></a>
           </div >
 
-          <div class="information card-deck bg-dark pt-4">
-            <div class="card" style="width: 18rem; height:32rem;">
-              <img class="card-img-top" src="img/nationalHotel.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">The Park Hotel Ruapehu</h5>
-                <h5 class="card-title">NZD 157/night</h5>
-                <p class="card-text">Minimum Guest:1, Minimum Night:1, Maximum Night:5</p>
-                <a href="#" class="seeMore btn btn-outline-info btn-block">SEE MORE</a>
-                <a href="#" class="bookNow btn btn-info btn-block">BOOK NOW</a>
-              </div>
+          <div id="details" class="seeMoreDetails information bg-dark p-4 ">
+              <div class="owl-carousel owl-theme d-flex flex-direction-row w-100">
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="img/ohakuneHouse.jpg" alt="Card image cap">
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="img/ohakuneHouse2.jpg" alt="Card image cap">
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="img/ohakuneHouse3.jpg" alt="Card image cap">
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="img/ohakuneHouse4.jpg" alt="Card image cap">
+                  </div>
+
             </div>
-
-            <div class="card" style="width: 18rem; height:32rem;">
-              <img class="card-img-top" src="img/nationalHotel.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">The Park Hotel Ruapehu</h5>
-                <h5 class="card-title">NZD 157/night</h5>
-                <p class="card-text">Minimum Guest:1, Minimum Night:1, Maximum Night:5</p>
-                <a href="#" class="seeMore btn btn-outline-info btn-block">SEE MORE</a>
-                <a href="#" class="bookNow btn btn-info btn-block">BOOK NOW</a>
-              </div>
+            <div class="card-body text-white">
+              <h5 class="card-title">Accommodation Information</h5>
+              <p class="card-text"> Address: Tainui St, 4625 Ohakune, New Zealand</p>
+              <p class="card-text"> </p>
             </div>
+         </div>
 
-            <div class="card" style="width: 18rem; height:32rem;">
-              <img class="card-img-top" src="img/nationalHotel.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">The Park Hotel Ruapehu</h5>
-                <h5 class="card-title">NZD 157/night</h5>
-                <p class="card-text">Minimum Guest:1, Minimum Night:1, Maximum Night:5</p>
-                <a href="#" class="seeMore btn btn-outline-info btn-block">SEE MORE</a>
-                <a href="#" class="bookNow btn btn-info btn-block">BOOK NOW</a>
-              </div>
-            </div>
-
-            <div class="card" style="width: 18rem; height:32rem;">
-              <img class="card-img-top" src="img/nationalHotel.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title">The Park Hotel Ruapehu</h5>
-                <h5 class="card-title">NZD 157/night</h5>
-                <p class="card-text">Minimum Guest:1, Minimum Night:1, Maximum Night:5</p>
-                <a href="#" class="seeMore btn btn-outline-info btn-block">SEE MORE</a>
-                <a href="#" class="bookNow btn btn-info btn-block">BOOK NOW</a>
-              </div>
-            </div>
-          </div>
-
-
-
-          <!-- <div class="information d-flex flex-row center">
-            <div class="card">
-              <img src="" alt="">
-              <div class="title">
-
-              </div>
-              <div class="details">
-
-              </div>
-              <div class="btn-group d-flex flex-column">
-                <button type="button" class="btn" name="button">SEE MORE</button>
-                <button type="button" class="btn btn-info" name="button">BOOK NOW</button>
-              </div>
-            </div>
-
-
-          </div> -->
-
-        <!-- <div class="banner">
-          <h1 class="bg-title text-center display-2">RUAPEHU</h1>
-        </div> -->
       </div>
 
       <form class="bookingForm">
@@ -146,10 +102,6 @@
                 <label class="input-group-text" for="inputGroupSelect01"><i class="fas fa-user-alt"></i></label>
               </div>
               <input type="number" name="quant[1]" class="form-control input-number" step="1" min="1" max="4" value="1" aria-describedby="basic-addon1">
-              <!-- <div class="input-group-append" id="button-addon4">
-                <button class="btn btn-outline-secondary" type="button">-</button>
-                <button class="btn btn-outline-secondary" type="button">+</button>
-              </div> -->
             </div>
             </div>
           <button id="search" type="button" class="mx-2 btn btn-info">Search</button>
@@ -196,12 +148,14 @@
 
     </div>
 
-  <script src="plugins/sweetAlert2/package/dist/sweetalert2.all.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script> -->
   <script type="text/javascript" src="js/jquery-3.4.1.min.js">  </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script type="text/javascript" src="js/jquery-ui.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"> </script>
   <script type="text/javascript" src="js/script.js"></script>
+  <script src="plugIns/OwlCarousel2-2.3.4/dist/owl.carousel.min.js">  </script>
+  <script src="plugins/sweetAlert2/package/dist/sweetalert2.all.min.js"></script>
   </body>
 </html>

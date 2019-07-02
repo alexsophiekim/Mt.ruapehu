@@ -122,51 +122,30 @@ html, body {
 /* line 91, ../scss/style.scss */
 .information {
   position: absolute;
-  top: 15%;
+  top: 16%;
   left: 10%;
   opacity: 0.9;
-  height: 60%;
+  height: 70%;
   width: 80%;
-  border-radius: 20px; }
+  border-radius: 20px;
+  overflow-y: scroll; }
 
 /* line 101, ../scss/style.scss */
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.8) !important;
-  display: none;
-  /* display: flex; */
-  justify-content: center;
-  align-items: center; }
+.sliderBox {
+  margin-top: 10px; }
+  /* line 104, ../scss/style.scss */
+  .sliderBox .morePhotos {
+    height: 10%;
+    width: auto; }
+
+/* line 109, ../scss/style.scss */
+.infoTitle, #infoText {
+  color: white;
+  margin-left: 40px; }
 
 /* line 114, ../scss/style.scss */
-#content {
-  color: black;
-  width: 50vw;
-  max-height: 45vh;
-  height: 45vh;
-  background-color: white;
-  padding: 10px;
-  position: relative; }
-
-/* line 123, ../scss/style.scss */
-#close {
-  position: absolute;
-  right: 0;
-  margin-right: 5px;
-  color: black;
-  z-index: 1000000; }
-
-/* line 130, ../scss/style.scss */
-#close:hover {
-  color: #bdc3c7;
-  cursor: pointer; }
-
-/* line 135, ../scss/style.scss */
-#itemImage {
-  max-height: 100%; }
+.infoTitle {
+  font-size: 30px;
+  font-weight: 600; }
 
 /*# sourceMappingURL=style.css.map */

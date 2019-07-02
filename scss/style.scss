@@ -90,48 +90,28 @@
 
 .information{
   position: absolute;
-  top:15%;
+  top:16%;
   left: 10%;
   opacity: 0.9;
-  height: 60%;
+  height: 70%;
   width: 80%;
   border-radius: 20px;
+  overflow-y: scroll;
 }
-
-.overlay{
-  position: fixed;
-  top:0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.8) !important;
-  display: none;
-  /* display: flex; */
-  justify-content: center;
-  align-items: center;
+.sliderBox{
+  margin-top: 10px;
+  // width: 90%;
+  .morePhotos{
+    height: 10%;
+    width: auto;
+  }
 }
-
-#content{
-  color: black;
-  width: 50vw;
-  max-height: 45vh;
-  height: 45vh;
-  background-color: white;
-  padding: 10px;
-  position: relative;
+.infoTitle, #infoText{
+  color: white;
+  margin-left: 40px;
+  // text-align: center;
 }
-#close{
-  position: absolute;
-  right: 0;
-  margin-right: 5px;
-  color: black;
-  z-index: 1000000;
-}
-#close:hover{
-  color: #bdc3c7;
-  cursor: pointer;
-}
-
-#itemImage{
-  max-height: 100%;
+.infoTitle{
+  font-size: 30px;
+  font-weight: 600;
 }
