@@ -185,7 +185,7 @@ var locations = [
       id:3,
       type:"Hotel",
       name: "Turangi Braxmere Hotel",
-      price: ,
+      price: 157,
       minGuest:1,
       maxGuest:2,
       minNight:1,
