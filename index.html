@@ -38,18 +38,6 @@
 
         </div>
 
-
-        <div id="details" class="seeMoreDetails bg-dark information">
-            <div id="owl1" class="owl-carousel owl-theme sliderBox ">
-              <img src="img/nationalHostel.jpg" class="morePhotos" alt="">
-              <img src="img/nationalHostel2.jpg" class="morePhotos" alt="">
-              <img src="img/nationalHostel3.jpg" class="morePhotos" alt="">
-          </div>
-          <p class="h5 infoTitle my-1">Accommodation information</p>
-          <p id="infoText">address : 4 Findlay Street, 3948 National Park, New Zealand</p>
-
-       </div>
-
         <div class="banner">
           <h1 class="bg-title text-center display-2">RUAPEHU</h1>
         </div>
@@ -107,11 +95,9 @@
       <form class="loginForm dropdown-menu p-3" method="post" action="#" onsubmit="validate()">
         <div class="form-group">
           <input type="text" class="form-control" id="idInput" placeholder="Username">
-          <p class="idErr"></p>
         </div>
         <div class="form-group">
           <input type="password" class="form-control pwErr" id="pwInput" placeholder="Password">
-          <p class="pwErr"></p>
         </div>
         <div class="lonInBtn d-flex justify-content-around">
           <button id="loginSubmit" type="submit" class="btn btn-dark" value="submit" >Log In</button>
@@ -119,9 +105,31 @@
         </div>
       </form>
 
+      <div class="bg-modal">
+          <div class="modal-content ">
+              <div id="close" class="close">
+                  <i id="close" class="fas fa-times fa-2x"></i>
+              </div>
+                  <div id="owl1" class="owl-carousel owl-theme row d-flex sliderBox">
+                  </div>
+                  <p class="row h4 infoTitle my-1 py-4">Accommodation information</p>
+                  <div class="row">
+                    <div class="col col-lg-6 col-sm-12 textInfoGroup">
+                      <p id="cardName" class="infoText"></p>
+                      <p id="cardPrice" class="infoText"></p>
+                      <p id="cardType" class="infoText"></p>
+                      <p id="cardAdd" class="infoText"></p>
+                    </div>
 
+                    <div class="col col-lg-6 col-sm-12 map d-flex">
+                      <div class="mapouter"><div class="gmap_canvas">
+                        <iframe width="400" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=ruapehu&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de/beste-wordpress-themes/"></a></div>
+                    </div>
+                  </div>
 
-    </div>
+      </div>
+
+  </div>
 
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js">  </script>

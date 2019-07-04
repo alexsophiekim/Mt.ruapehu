@@ -1,5 +1,4 @@
 $("#cardsList").hide();
-$("#details").hide();
 var locations = [
   {
     placeName: 'national',
@@ -15,7 +14,7 @@ var locations = [
       maxNight:10,
       amenities: ["kitchen","Shared lounge"],
       img: "nationalHostel.jpg",
-      morePhoto: ["nationalHostel2.jpg","nationalHostel3.jpg"],
+      morePhoto: ["nationalHostel2.jpg","nationalHostel3.jpg","nationalHostel4.jpg"],
       add: "4 Findlay Street, 3948 National Park, New Zealand",
       lat: -39.175230,
       lng: 175.398300,
@@ -32,7 +31,7 @@ var locations = [
       maxNight:10,
       amenities: ["kitchen","Shared lounge"],
       img: "nationalMotel.jpg",
-      morePhoto: ["nationalMotel2.jpg","nationalMotel3.jpg"],
+      morePhoto: ["nationalMotel2.jpg","nationalMotel3.jpg","nationalMotel4.jpg"],
       add: "18 Millar Street, National Park, 3989 National Park, New Zealand",
       lat:-39.173410,
       lng: 175.398950,
@@ -49,7 +48,7 @@ var locations = [
       maxNight:5,
       amenities: ["kitchen","Shared lounge"],
       img: "nationalHotel.jpg",
-      morePhoto: ["nationalHotel2.jpg","nationalHotel3.jpg"],
+      morePhoto: ["nationalHotel2.jpg","nationalHotel3.jpg","nationalHotel4.jpg"],
       add: "Cnr Sh4 And Millar St, 3948 National Park, New Zealand",
       lat: -39.173270,
       lng: 175.400480,
@@ -66,7 +65,7 @@ var locations = [
       maxNight:15,
       amenities: ["kitchen","Shared lounge"],
       img: "nationalHouse.jpg",
-      morePhoto: ["nationalHouse2.jpg","nationalHouse3.jpg"],
+      morePhoto: ["nationalHouse2.jpg","nationalHouse3.jpg","nationalHouse4.jpg"],
       add: "28 Findlay St, National Park, 3989 National Park, New Zealand",
       lat: -39.175000,
       lng: 175.399680,
@@ -88,8 +87,7 @@ var locations = [
       maxNight:10,
       amenities: ["kitchen","Shared lounge"],
       img: "whakapapaHostel.jpg",
-      img: "nationalHouse.jpg",
-      morePhoto: ["nationalHotel2.jpg","nationalHotel3.jpg"],
+      morePhoto: ["whakapapaHostel2.jpg","whakapapaHostel3.jpg","whakapapaHostel4.jpg"],
       add: "State Highway 48 Whakapapa Village, Mt Ruapehu, Tongariro National Park 3951",
       lat: -39.201610,
       lng: 175.540090,
@@ -106,7 +104,7 @@ var locations = [
       maxNight:10,
       amenities: ["kitchen","Shared lounge"],
       img: "whakapapaMotel.jpg",
-      morePhoto: ["whakapapaHotel2.jpg","whakapapaHotel3.jpg"],
+      morePhoto: ["whakapapaMotel2.jpg","whakapapaMotel3.jpg","whakapapaMotel4.jpg"],
       add: "Ngauruhoe Place,Tongariro National Park 4691, 3951 Tongariro, New Zealand",
       lat: -39.173990,
       lng: 175.399050,
@@ -123,6 +121,7 @@ var locations = [
       maxNight:5,
       amenities: ["kitchen","Shared lounge"],
       img: "whakapapaHotel.jpg",
+      morePhoto: ["whakapapaHotel2.jpg","whakapapaHotel3.jpg","whakapapaHotel4.jpg"],
       add: "State Highway 48 Whakapapa Village, Mt Ruapehu, Tongariro National Park 3951",
       lat: -39.201610,
       lng: 175.540090,
@@ -139,6 +138,7 @@ var locations = [
       maxNight:15,
       amenities: ["kitchen","Shared lounge"],
       img: "whakapapaHouse.jpg",
+      morePhoto: ["whakapapaHouse2.jpg","whakapapaHouse3.jpg","whakapapaHouse4.jpg"],
       add: "State Highway 48 Whakapapa Village, Mt Ruapehu, Tongariro National Park 3951",
       lat: -41.289816,
       lng: 174.779321,
@@ -160,6 +160,7 @@ var locations = [
       maxNight:10,
       amenities: ["kitchen","Shared lounge"],
       img: "turangiHostel.jpg",
+      morePhoto: ["turangiHostel2.jpg","turangiHostel3.jpg","torangiHostel4.jpg"],
       add: "State Highway 48 Whakapapa Village, Mt Ruapehu, Tongariro National Park 3951",
       lat: -41.289816,
       lng: 174.779321,
@@ -176,6 +177,7 @@ var locations = [
       maxNight:10,
       amenities: ["kitchen","Shared lounge"],
       img: "turangiMotel.jpg",
+      morePhoto: ["turangiMotel.jpg","turangiMotel3.jpg","turangiMotel4.jpg"],
       add: "4600 State Highway 1, 3334 Turangi, New Zealand",
       lat: -41.289816,
       lng: 174.779321,
@@ -192,6 +194,7 @@ var locations = [
       maxNight:5,
       amenities: ["kitchen","Shared lounge"],
       img: "turangiHotel.jpg",
+      morePhoto: ["turangiHotel.jpg","turangiHotel3.jpg","turangiHotel4.jpg"],
       add: "88 Waihi Road, 3381 Turangi, New Zealand",
       lat: -41.289816,
       lng: 174.779321,
@@ -208,6 +211,7 @@ var locations = [
       maxNight:15,
       amenities: ["kitchen","Shared lounge"],
       img: "turangiHouse.jpg",
+      morePhoto: ["turangiHouse2.jpg","turangiHouse3.jpg","turangiHouse4.jpg"],
       add: "Pihanga View, 3381 Turangi, New Zealand",
       lat: -41.289816,
       lng: 174.779321,
@@ -229,6 +233,7 @@ var locations = [
       maxNight:10,
       amenities: ["kitchen","Shared lounge"],
       img: "ohakuneHostel.jpg",
+      morePhoto: ["ohakuneHostel2.jpg","ohakuneHostel3.jpg","ohakuneHostel4.jpg"],
       add: "1 Rata Street, 4265 Ohakune, New Zealand",
       lat: -41.289816,
       lng: 174.779321,
@@ -244,6 +249,7 @@ var locations = [
       minNight:3,
       maxNight:10,
       img: "ohakuneMotel.jpg",
+      morePhoto: ["ohakuneMotel2.jpg","ohakuneMotel3.jpg","ohakuneMotel4.jpg"],
       add: "2 Moore Street, 4625 Ohakune, New Zealand",
       lat: -41.289816,
       lng: 174.779321,
@@ -259,6 +265,7 @@ var locations = [
       minNight:1,
       maxNight:5,
       img: "ohakuneHotel.jpg",
+      morePhoto: ["ohakuneHotel2.jpg","ohakuneHotel3.jpg","ohakuneHotel4.jpg"],
       add: "3 Karo Street, 4660 Ohakune, New Zealand",
       lat: -41.289816,
       lng: 174.779321,
@@ -274,6 +281,7 @@ var locations = [
       minNight:1,
       maxNight:15,
       img: "ohakuneHouse.jpg",
+      morePhoto: ["ohakuneHouse2.jpg","ohakuneHouse3.jpg","ohakuneHouse4.jpg"],
       add: "Tainui St, 4625 Ohakune, New Zealand",
       lat: -41.289816,
       lng: 174.779321,
@@ -321,16 +329,15 @@ function itemCard(finalFilterArray){
     for (var i = 0; i < accom.length; i++) {
         var itemCard ='<div class=" text-center my-1">';
           itemCard += '<div class="card " style="width: 16rem;" data-id="'+accom[i].id+'">';
-          itemCard += '<img src ="img/'+accom[i].img+'"class="img-img-top img-thumbnail" style="height: 12rem;" alt="">';
+          itemCard += '<img src ="img/'+accom[i].img+'"class="img-img-top itemThumb itemThumb2 img-thumbnail" style="height: 12rem;" alt="">';
             var typeColour = getTypeColour(accom[i].type);
-            console.log(typeColour);
            itemCard += '<span class ="badge badge-'+typeColour+' mr-1">'+accom[i].type+'</span>';
             itemCard += '<div class="card-body">';
               itemCard += '<h5 class="card-title">'+accom[i].name+'</h5>';
               itemCard += '<h5 class="card-title">NZD'+accom[i].price+'/night</h5>';
                 itemCard +=  '<p class="card-text">Minimum Guest:'+accom[i].minGuest+' Maximum Guest:'+accom[i].maxGuest+' Minimum Night:'+accom[i].minNight+' Maximum night:'+accom[i].maxNight+'</p>';
-                  itemCard +=  '<a href="#" class="seeMore seeMore btn btn-outline-info btn-block">SEE MORE</a>';
-                  itemCard +=  '<a href="#" class="bookNow bookNow btn btn-info btn-block">BOOK NOW</a>';
+                  itemCard +=  '<a href="#" class="seeMore btn btn-outline-info btn-block" data-view-num="' + i + '">SEE MORE</a>';
+                  itemCard +=  '<a href="#" class="bookNow btn btn-info btn-block" data-array-num="' + i + '">BOOK NOW</a>';
             itemCard +='</div>';
           itemCard +='</div>';
         itemCard +='</div>';
@@ -338,12 +345,15 @@ function itemCard(finalFilterArray){
         cardsList.innerHTML += itemCard;
     };
     $(".bookNow").click(function(){
+      console.log();
       var diff2 = calculate();
+      console.log(diff2);
       var accom = finalFilterArray;
-      for (var i = 0; i < accom.length; i++) {
-        var getPrice = accom[0].price;
-        console.log(getPrice);
-      }
+      var getPrice = 0
+      // for (var i = 0; i < accom.length; i++) {
+       getPrice = accom[$(this).data("arrayNum")].price;
+       console.log(getPrice);
+      // }
       var totalCost = diff2 * getPrice;
       var pay =["Credit Card","Debit Card","Cash","Others"];
       var breakfast =["Yes","No"];
@@ -382,14 +392,34 @@ function itemCard(finalFilterArray){
           })
         }
       })
-
     });
     $(".seeMore").click(function(){
       $("#cardsList").hide();
-      $("#details").show();
+        document.querySelector(".bg-modal").style.display = 'flex';
+        var accom = finalFilterArray;
+        var view = accom[$(this).data("viewNum")];
+        console.log(view);
 
+        document.getElementById('owl1').innerHTML = '';
+           for (var i = 0; i < view.morePhoto.length; i++) {
+              console.log(view.morePhoto[i]);
+              document.getElementById('owl1').innerHTML += '<img src="img/'+view.morePhoto[i]+'" class="owl-item col col-lg-4" alt="">';
+            }
+         document.getElementById('cardName').innerText = view.name;
+         document.getElementById('cardPrice').innerText = 'NZD '+view.price;
+         document.getElementById('cardAdd').innerText = 'Address: '+view.add;
+         var typeColour = getTypeColour(view.type);
+         document.getElementById('cardType').innerHTML = '<span class ="badge badge-'+typeColour+' mr-1">'+view.type+'</span>';
+
+
+        document.getElementById('close').addEventListener('click',function(){
+        document.querySelector('.bg-modal').style.display = 'none';
+        document.body.style.overflow = 'scroll';
+      });
     });
 };
+
+
 
 function getTypeColour(type){
   if (type === 'Hostel') {
@@ -443,6 +473,10 @@ function calculate() {
 }
 
 $("#search").click(function(){
+
+  if (window.matchMedia("(max-width: 480px)").matches) {
+    $('.bookingForm').hide();
+  } 
   $(".banner").hide();
   $("#cardsList").show();
   var diff2 = calculate();
@@ -478,7 +512,6 @@ $(document).ready(function(){
       lazyLoad: true
   });
 });
-
 
 ////// Login Form //////
 $("#login").click(function(){
