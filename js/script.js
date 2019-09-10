@@ -324,18 +324,18 @@ option.change(function(){
 
 function itemCard(finalFilterArray){
   cardsList.innerHTML='';
-  console.log(finalFilterArray);
+  // console.log(finalFilterArray);
   var accom = finalFilterArray;
     for (var i = 0; i < accom.length; i++) {
-        var itemCard ='<div class=" text-center my-1">';
-          itemCard += '<div class="card " style="width: 16rem;" data-id="'+accom[i].id+'">';
+        var itemCard ='<div class=" text-center my-1 mx-1">';
+          itemCard += '<div class="card mx-auto" style="width: 16rem;" data-id="'+accom[i].id+'">';
           itemCard += '<img src ="img/'+accom[i].img+'"class="img-img-top itemThumb itemThumb2 img-thumbnail" style="height: 12rem;" alt="">';
             var typeColour = getTypeColour(accom[i].type);
            itemCard += '<span class ="badge badge-'+typeColour+' mr-1">'+accom[i].type+'</span>';
             itemCard += '<div class="card-body">';
               itemCard += '<h5 class="card-title">'+accom[i].name+'</h5>';
               itemCard += '<h5 class="card-title">NZD'+accom[i].price+'/night</h5>';
-                itemCard +=  '<p class="card-text">Minimum Guest:'+accom[i].minGuest+' Maximum Guest:'+accom[i].maxGuest+' Minimum Night:'+accom[i].minNight+' Maximum night:'+accom[i].maxNight+'</p>';
+                // itemCard +=  '<p class="card-text">Minimum Guest:'+accom[i].minGuest+' Maximum Guest:'+accom[i].maxGuest+' Minimum Night:'+accom[i].minNight+' Maximum night:'+accom[i].maxNight+'</p>';
                   itemCard +=  '<a href="#" class="seeMore btn btn-outline-info btn-block" data-view-num="' + i + '">SEE MORE</a>';
                   itemCard +=  '<a href="#" class="bookNow btn btn-info btn-block" data-array-num="' + i + '">BOOK NOW</a>';
             itemCard +='</div>';
@@ -345,16 +345,15 @@ function itemCard(finalFilterArray){
         cardsList.innerHTML += itemCard;
     };
     $(".bookNow").click(function(){
-      console.log();
+      // console.log();
       var diff2 = calculate();
-      console.log(diff2);
+      // console.log(diff2);
       var accom = finalFilterArray;
       var getPrice = 0
       // for (var i = 0; i < accom.length; i++) {
        getPrice = accom[$(this).data("arrayNum")].price;
-       console.log(getPrice);
-      // }
-      var totalCost = diff2 * getPrice;
+       // console.log(getPrice);
+      // }s
       var pay =["Credit Card","Debit Card","Cash","Others"];
       var breakfast =["Yes","No"];
       Swal.mixin({
@@ -376,7 +375,6 @@ function itemCard(finalFilterArray){
           input: 'select',
           animation:'slide-from-top',
           inputOptions: pay
-
         },
         {
           title: 'Do you want to get confirmation email?',
@@ -398,11 +396,10 @@ function itemCard(finalFilterArray){
         document.querySelector(".bg-modal").style.display = 'flex';
         var accom = finalFilterArray;
         var view = accom[$(this).data("viewNum")];
-        console.log(view);
-
+        // console.log(view);
         document.getElementById('owl1').innerHTML = '';
            for (var i = 0; i < view.morePhoto.length; i++) {
-              console.log(view.morePhoto[i]);
+              // console.log(view.morePhoto[i]);
               document.getElementById('owl1').innerHTML += '<img src="img/'+view.morePhoto[i]+'" class="owl-item col col-lg-4" alt="">';
             }
          document.getElementById('cardName').innerText = view.name;
@@ -410,7 +407,6 @@ function itemCard(finalFilterArray){
          document.getElementById('cardAdd').innerText = 'Address: '+view.add;
          var typeColour = getTypeColour(view.type);
          document.getElementById('cardType').innerHTML = '<span class ="badge badge-'+typeColour+' mr-1">'+view.type+'</span>';
-
 
         document.getElementById('close').addEventListener('click',function(){
         document.querySelector('.bg-modal').style.display = 'none';
@@ -476,13 +472,13 @@ $("#search").click(function(){
 
   if (window.matchMedia("(max-width: 480px)").matches) {
     $('.bookingForm').hide();
-  } 
+  }
   $(".banner").hide();
   $("#cardsList").show();
   var diff2 = calculate();
-  console.log(diff2);
+  // console.log(diff2);
     var guest = parseInt($("input[name='quant[1]']").val());
-    console.log(guest);
+    // console.log(guest);
 
   var date =[];
   var final = [];
@@ -499,27 +495,13 @@ $("#search").click(function(){
   itemCard(final);
 });
 
-$(document).ready(function(){
-  $("#owl1").owlCarousel({
-      loop: true,
-      autoWide: true,
-      center: true,
-      autoplay: true,
-      nav: true,
-      dots: true,
-      stagePadding: 0,
-      margin: 100,
-      lazyLoad: true
-  });
-});
-
 ////// Login Form //////
 $("#login").click(function(){
   $(".loginForm").toggle().dropdown()
 });
 $("#loginSubmit").click(function(){
   var id = $("#idInput").val();
-  console.log(id);
+  // console.log(id);
   validate();
   $(".loginForm").hide( "drop", { direction: "down" }, "slow" )
 });

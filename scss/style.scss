@@ -13,8 +13,17 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+.logoBox{
+  @include respond-to(sm){
+    right: -20px;
+    left: auto !important;
+  };
+}
 .logo{
   width: 120px;
+  @include respond-to(sm){
+    width: 80px;
+  };
 }
 .loginText{
   font-size: 20px;
@@ -35,6 +44,7 @@
     flex-direction:row !important;
     width: 100px;
     justify-content:space-around;
+    right: -20px;
   }
   .icon{
     font-size: 27px;
@@ -87,7 +97,6 @@
     }
   }
 }
-
 .information, .modal-content{
   position: absolute;
   top:16%;
@@ -143,6 +152,11 @@
       color: black;
       opacity: 1;
       z-index: 1000000;
+      @include respond-to(sm){
+        top:10px;
+        margin-right: 10px;
+        font-size: 10px;
+      };
     }
     .close:hover{
       color: $dark;
