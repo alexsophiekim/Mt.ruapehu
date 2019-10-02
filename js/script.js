@@ -518,3 +518,8 @@ $("#loginSubmit").click(function(){
       $("#pwInput").attr("placeholder", "enter password");
     } return false;
   }
+
+$('#close').click(function(){
+  $('#main').append();
+  $('.banner').show();
+})
