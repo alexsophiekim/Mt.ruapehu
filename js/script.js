@@ -348,6 +348,7 @@ function itemCard(finalFilterArray){
       // console.log();
       var diff2 = calculate();
       // console.log(diff2);
+      var totalCost = diff2 * getPrice;
       var accom = finalFilterArray;
       var getPrice = 0
       // for (var i = 0; i < accom.length; i++) {
