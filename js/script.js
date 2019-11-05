@@ -392,6 +392,7 @@ function itemCard(finalFilterArray){
         }
       })
     });
+    
     $(".seeMore").click(function(){
       $("#cardsList").hide();
         document.querySelector(".bg-modal").style.display = 'flex';
