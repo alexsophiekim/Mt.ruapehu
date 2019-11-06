@@ -348,13 +348,13 @@ function itemCard(finalFilterArray){
       // console.log();
       var diff2 = calculate();
       // console.log(diff2);
-      var totalCost = diff2 * getPrice;
       var accom = finalFilterArray;
       var getPrice = 0
       // for (var i = 0; i < accom.length; i++) {
        getPrice = accom[$(this).data("arrayNum")].price;
        // console.log(getPrice);
-      // }s
+      // }
+      var totalCost = diff2 * getPrice;
       var pay =["Credit Card","Debit Card","Cash","Others"];
       var breakfast =["Yes","No"];
       Swal.mixin({
@@ -392,7 +392,7 @@ function itemCard(finalFilterArray){
         }
       })
     });
-    
+
     $(".seeMore").click(function(){
       $("#cardsList").hide();
         document.querySelector(".bg-modal").style.display = 'flex';
